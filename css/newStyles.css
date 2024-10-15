@@ -1,0 +1,237 @@
+.espaciado .text-start{
+    height: 110px;
+}
+
+.redes{
+    background-color: rgb(37, 34, 36);
+    margin: 0px;
+    width: 100%;
+    height: 8rem;
+}
+
+.nav-item .lista{
+    border-radius: 0px;
+    background-color:  #d63384;
+    border-color: transparent;
+}
+
+.lista .dropdown-item{
+    color: aliceblue;
+}
+
+.lista .dropdown-item:hover{
+    background-color: #f48fb1;
+    color: aliceblue;
+}
+
+.offcanvas-body .canva-carrito{
+    display: flex;
+    padding: 0 !important;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+.canva-carrito #carrito-vacio{
+    margin: 0 auto;
+}
+
+.offcanvas-body .canva-carrito img{
+    width: 10rem;
+    height: 10rem;
+    gap: 0.3rem
+}
+
+.offcanvas-body .canva-carrito button{
+    background-color: #d63384;
+    padding: 0.5rem;
+    color: aliceblue;
+    border-style: none;
+    font-weight: bold;
+    font-size: 0.8rem ;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.offcanvas-body .canva-carrito button:hover{
+    background-color: #ce0a6c;
+
+}
+
+.delivery{
+    width: 100%;
+    padding: 4rem;
+    height: calc(20rem -10rem);
+    margin-top: 5rem;
+}
+.delivery .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.delivery .container p{
+    justify-content: center;
+    text-align: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+
+
+.delivery-container-descrip{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+   
+}
+
+.delivery .container .row .seccion{
+    margin:0;
+    height: 12rem;
+    padding: 0;
+}
+
+.delivery .container .row .seccion p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: start;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+ 
+.delivery .container .row .seccion h6{
+    font-weight: bold;
+    font-size: 14px !important;
+}
+
+.delivery .container .row .seccion .col-md-4 img{
+    width: 100%;
+}
+
+.info-footer{
+margin: 0;
+text-align: start;
+height: 23rem;
+}
+
+.menu-footer{
+    height: 23rem;
+}
+
+.menu-footer ul{
+    margin: 0;
+}
+.menu-footer ul li{
+    list-style: none;
+    text-align: start;
+}
+
+.footer .contenedor{
+   margin: 0px !important;
+   width: 100% !important;
+}
+
+
+.copywriten{
+    background-color:#d63384 !important;
+    width: 100%;
+    height: 5rem;
+    margin: 0 !important;
+}
+
+.footer .contenedor .footer-contenido{
+    margin: 2rem;
+    padding: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.footer .contenedor .footer-contenedor-img{
+    margin-top: 3rem;
+}
+
+.footer .contenedor .footer-contenedor-img img{
+    width: 30%;
+}
+
+.text-quinesSomos{
+    font-style: oblique;
+    gap: 1.5rem;
+}
+
+.text-quinesSomos-descrip-item{
+    margin-bottom: 1rem;
+    padding: 0;
+   
+}
+.text-quinesSomos-descrip-item h6{
+    color: #ce0a6c;
+    font-weight: bold;
+}
+.text-quinesSomos-descrip-item p{
+    margin: 0;
+    gap: 0;
+    padding: 0;
+}
+
+.border-bottom-white{
+    border-bottom: 1px solid #fff;
+}
+.compra-id img{
+    width: 5rem !important;
+    height: 5rem !important;
+}
+
+.compraItem{
+    display:flex;
+    background-color: #f2f0f1;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    justify-content: space-between;
+    
+}
+
+.compraItem:hover{
+    border-style: solid;
+    border-color: #ec81b6;
+}
+
+.compraIem-descrip{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.compraItem button{
+    background-color: transparent !important;
+}
+
+.linea{
+    width: 100%;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total span{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.total span b {
+    color: #ce0a6c;
+    font-weight: bold;
+}
+
+.pie-carrito{
+    display: flex;
+    flex-direction: column;
+}

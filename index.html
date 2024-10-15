@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>NPDetalles&Accesorios</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="css/newStyles.css">
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Boostrap-->
+        <link rel="stylesheet" href="css/css/bootstrap.min.css">
+
+    </head>
+    <body id="page-top">
+            <div class="redes"></div>
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="#page-top"><img src="img/logo.png" alt="..." /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars ms-1"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item"><a class="nav-link dropdown" href="#nuevo">De Temporada</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" href="#ocasiones" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ocasiones
+                                </a>
+                                <ul class="dropdown-menu lista" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Graduación</a></li>
+                                    <li><a class="dropdown-item" href="#">Amor</a></li>
+                                    <li><a class="dropdown-item" href="#">Nacimiento</a></li>
+                                    <li><a class="dropdown-item" href="#">Amistad</a></li>
+                                    <li><a class="dropdown-item" href="#">Aniversario</a></li>
+                                    <li><a class="dropdown-item" href="#">Condolencias</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#flores" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Flores
+                                </a>
+                                <ul class="dropdown-menu lista" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Rosas</a></li>
+                                    <li><a class="dropdown-item" href="#">Girasoles</a></li>
+                                    <li><a class="dropdown-item" href="#">Tulipanes</a></li>
+                                    <li><a class="dropdown-item" href="#">Margaritas</a></li>
+                                    <li><a class="dropdown-item" href="#">Orquídeas</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#arreglos" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Arreglos
+                                </a>
+                                <ul class="dropdown-menu lista" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Para Cumpleaños</a></li>
+                                    <li><a class="dropdown-item" href="#">Para Aniversario</a></li>
+                                    <li><a class="dropdown-item" href="#">De Flores</a></li>
+                                    <li><a class="dropdown-item" href="#">De Chocolates</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#regalos" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Regalos
+                                </a>
+                                <ul class="dropdown-menu lista" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Para él</a></li>
+                                    <li><a class="dropdown-item" href="#">Para ella</a></li>
+                                    <li><a class="dropdown-item" href="#">Globos</a></li>
+                                    <li><a class="dropdown-item" href="#">Boxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Personalizados</a></li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <button class="boton-carrito position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div>
+                                <img src="img/carrito-de-compras_rosa.png" alt="carrito">
+                            </div>
+                            <p id="montoPagar">S/0.00</p>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="numeroCarrito">
+                                0
+                            </span>
+                        </button>
+
+                        
+                    </div>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <hr>
+                <div class="offcanvas-body">
+                    <div class="canva-carrito" id="contenedorProductosComprados">
+                        <div id="carrito-vacio">
+                            <img src="img/carro-vacio_bebe.png" alt="">
+                            <p>No hay productos en el carrito</p>
+                            <button>Regresar a la tienda</button>
+                        </div>
+                    </div>
+                    <div id="totaldeCompra">
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+            </div>
+        </header>
+        
+       
+        <!-- De Temporada-->
+        <section class="page-section bg-light" id="nuevo">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">De Temporada</h2>
+                    <h3 class="section-subheading text-muted">Nos actulizamos todas las semanas.</h3>
+                </div>                
+                <div class="row" id="contenedorProductos">
+                    
+                </div>
+                <div class="boton-portafolio">
+                    <button type="button" class="btn btn-pink btn-lg">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+         <!-- Ocasiones-->
+         <section class="page-section bg-light categorias">
+            <div class="container espaciado" id="ocasiones">
+                <div class="text-start">
+                    <h2 class="section-heading text-uppercase">Ocasiones</h2>
+                    <h3 class="section-subheading text-muted">En toda ocasión puedes tener un detalle especial.</h3>
+                </div>                
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/1.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Aniversario Dorado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.25.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/2.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Cumpleaños Perzonalizado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.26.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/3.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Osito pink Floreado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/4.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Detalle Osito blue stich</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-portafolio">
+                    <button type="button" class="btn btn-pink btn-lg">Ver más</button>
+                </div>
+            </div>
+        </section>
+        
+         <!-- Flores-->
+         <section class="page-section bg-light categorias" >
+            <div class="container espaciado" id="flores">
+                <div class="text-start">
+                    <h2 class="section-heading text-uppercase">Flores</h2>
+                    <h3 class="section-subheading text-muted">Las flores más hermosas las encuentras aquí</h3>
+                </div>                
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/1.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Aniversario Dorado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.25.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/2.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Cumpleaños Perzonalizado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.26.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/3.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Osito pink Floreado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/4.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Detalle Osito blue stich</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-portafolio">
+                    <button type="button" class="btn btn-pink btn-lg">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+         <!-- Arreglos-->
+         <section class="page-section bg-light categorias">
+            <div class="container espaciado" id="arreglos">
+                <div class="text-start">
+                    <h2 class="section-heading text-uppercase">Arreglos</h2>
+                    <h3 class="section-subheading text-muted">Variedad de arreglos personalizados exclusivos</h3>
+                </div>                
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/1.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Aniversario Dorado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.25.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/2.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Cumpleaños Perzonalizado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.26.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/3.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Osito pink Floreado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/4.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Detalle Osito blue stich</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-portafolio">
+                    <button type="button" class="btn btn-pink btn-lg">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+         <!-- Regalos-->
+         <section class="page-section bg-light categorias" id="regalos">
+            <div class="container espaciado" >
+                <div class="text-start">
+                    <h2 class="section-heading text-uppercase">Regalos</h2>
+                    <h3 class="section-subheading text-muted">Variedad de regalos personalizados exclusivos</h3>
+                </div>                
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/1.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Aniversario Dorado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.25.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/2.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Cumpleaños Perzonalizado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/.26.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/3.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Osito pink Floreado</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-3">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluido" src="img/4.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="card-body">
+                                    <h5 class="card-title portfolio-caption-heading">Detalle Osito blue stich</h5>
+                                    <p class="card-text portfolio-caption-subheading">S/30.00</p>
+                                    <a href="#" class="btn btn-outline-secondary">Agregar al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boton-portafolio">
+                    <button type="button" class="btn btn-pink btn-lg">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="delivery">
+            <div class="container">
+                <div class="row">
+                    <section class="row col-lg-3 seccion">
+                        <div class="col-md-4">
+                            <img src="img/enviado.png" alt="">
+                        </div>
+                        <div class="col-md-8 delivery-container-descrip">
+                            <h6>Delivery en todo Piura</h6>
+                            <p>Entregándolos hasta tu puerta con rapidez y seguridad. </p>
+                        </div>
+                    </section>
+                    <section class="row col-lg-3 seccion">
+                        <div class="col-md-4">
+                            <img src="img/tarjeta-de-credito.png" alt="">
+                        </div>
+                        <div class="col-md-8 delivery-container-descrip">
+                            <h6>Pagos 100% seguros</h6>
+                            <p>Aceptamos todas las tarjetas, yape, Plin, transferencia y PayPal.</p>
+                        </div>
+                    </section>
+                    <section class="row col-lg-3 seccion">
+                        <div class="col-md-4">
+                            <img src="img/regalo.png" alt="">
+                        </div>
+                        <div class="col-md-8 delivery-container-descrip">
+                            <h6>Fotos reales de productos reales</h6>
+                            <p>Nuestras fotos son de productos reales. Lo que ves, es lo que se entrega.</p>
+                        </div>
+                    </section>
+                    <section class="row col-lg-3 seccion">
+                        <div class="col-md-4">
+                            <img src="img/servicio-al-cliente.png" alt="">
+                        </div>
+                        <div class="col-md-8 delivery-container-descrip">
+                            <h6>Garantizamos tu pedido</h6>
+                            <p>Puedes confiar en que tu pedido llegará en perfectas condiciones y en el tiempo prometido.</p>
+                        </div>
+                    </section>
+                </div>
+                <p>Ayudarte a expresar tus sentimientos y crear momentos inolvidables por medio de detalles que transmitan tu amor sin importar
+                    las barreras del tiempo y la distancia. Sabemos que los detalles marcan la diferencia. Más aún cuando se trata de sorprender a tu
+                    persona favorita. Por eso ponemos especial cuidado en toda la experiencia de compra de tu detalle. Desde su armado hasta su
+                    entrega.
+                </p>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contactanos</h2>
+                    <h3 class="section-subheading text-muted">Cotiza con nosotros aquí</h3>
+                </div>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="footer-contenedor-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <hr style="width: 80%; margin: 0 auto; height: 1rem;">
+                <div class="row footer-contenido">
+                    <div class="col-lg-4 info-footer">
+                        <div class="text-quinesSomos">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ratione et in earum dolorem, accusamus, quos quod consectetur saepe delectus odit modi enim dicta voluptates dolorum ipsum laboriosam recusandae iusto?</p>
+                            <div class="text-quinesSomos-descrip">
+                                <div class="text-quinesSomos-descrip-item">
+                                    <h6>Horario de Atención</h6>
+                                    <p>Lunes a Sábados: 7:00 am a 8:00 pm</p>
+                                </div>
+                                <div class="text-quinesSomos-descrip-item">
+                                    <h6>Consultas</h6>
+                                    <p>npdetalles@gmail.com</p>
+                                </div>
+                                <div class="text-quinesSomos-descrip-item">
+                                    <h6>Dirección</h6>
+                                    <p>Piura 243-A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row col-lg-8 menu-footer">
+                        <div class="col-lg-3">
+                            <H5>OCASIONES</H5>
+                            <ul>
+                                <li><nav>GRADUACIÓN</nav></li>
+                                <li><nav>AMOR</nav></li>
+                                <li><nav>NACIMIENTO</nav></li>
+                                <li><nav>AMISTAD</nav></li>
+                                <li><nav>ANIVERSARIO</nav></li>
+                                <li><nav>CONDOLENCIAS</nav></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <H5>FLORES</H5>
+                            <ul>
+                                <li><nav>ROSAS</nav></li>
+                                <li><nav>GIRASOLES</nav></li>
+                                <li><nav>TULIPANES</nav></li>
+                                <li><nav>MARGARITAS</nav></li>
+                                <li><nav>ORQUÍDEAS</nav></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <H5>ARREGLOS</H5>
+                            <ul>
+                                <li><nav>PARA CUMPLEAÑOS</nav></li>
+                                <li><nav>PARA ANIVERSARIO</nav></li>
+                                <li><nav>DE FLORES</nav></li>
+                                <li><nav>DE CHOCOLATES</nav></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <H5>REGALOS</H5>
+                            <ul>
+                                <li><nav>PARA ÉL</nav></li>
+                                <li><nav>PARA ELLA</nav></li>
+                                <li><nav>GLOBOS</nav></li>
+                                <li><nav>BOXES</nav></li>
+                                <li><nav>PERSONALIZADOS</nav></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center copywriten">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; 2024</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">NPDetalles y Accesorios</a>
+                        <a class="link-dark text-decoration-none" href="#!">Piura</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/1.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/2.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/3.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/5.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/6.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body row">
+                                    <!-- Project details-->
+                                    <div class="col">
+                                        <img class="img-fluid d-block mx-auto" src="img/1.png" alt="..." />
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-uppercase"><strong>Detalle Aniversario Dorado</strong></h5>
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Precio:</strong>
+                                            S/. 25.00
+                                        </li>
+                                        <li>
+                                            <strong>Categoria:</strong>
+                                            Ocasiones
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-rosa btn-xl text-uppercase" style="background-color: #d63384;" type="button">
+                                        Comprar Ahora
+                                    </button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="js/main.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
